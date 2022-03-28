@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="contact-form.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="/contact-form.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Connect With Me</h1>
+      <form id="connect-form" action="">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input
+            placeholder="John"
+            id="first-name"
+            class="form-control validate-input"
+            type="text"
+            name="first-name"
+            
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input
+            placeholder="Smith"
+            id="last-name"
+            class="form-control validate-input"
+            type="text"
+            name="last-name"
+            
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            placeholder="Example@Email.com"
+            id="email"
+            class="form-control validate-input"
+            type="email"
+            name="email"
+          
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="kind">What can I help you with?</label>
+          
+          <input
+          placeholder="Message"
+            class="form-control" 
+            type="text"
+            name="kind" 
+            id="contact-kind">
+          
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        
+          
+
+        
+
+        <div class="form-group">
+          <input class="btn btn-primary" type="submit" value="Sign up" />
+        </div>
+      </form>
+    </div>
+
+    <div class="error-message">
+      <h3> Please correct the invalid inputs</h1>
+    </div>
+
+    
+  </body>
+</html>
